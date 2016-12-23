@@ -1,23 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Todos</h1>
-
-<ul>
-  <% @todos.each do |todo| %>
-
-    <li data-id="<%= todo.id %>">
-      <%= check_box_tag :complete, 1, todo.completed? %>
-      <span>
+<div data-behavior='todo-list'>
+  
+  <h1>Listing Todos</h1>
+    <% @todos.each do |todo| %>
+    <div data-behavior="todo" data-id="<%= todo.id %>">
+      <p data-behavior="todo-description">
         <% if todo.completed? %>
-          <del><%= todo.description %></del>
+          <s><%= todo.description %></s>
         <% else %>
           <%= todo.description %>
         <% end %>
-      </span>
-      <%= link_to 'Delete', 'javascript:sweetAlert("Oops...", "Something went wrong!", "error")' %>
-    </li>
-  <% end %>
-</ul>
+      </p>
+     
+      <%= button_tag :complete, data: {behavior: 'todo-toggle'} %>    
+    
+    </div>
+    <% end %>
+</div>
+
+<%= link_to("Delete Completed Todos", "#") %>
 
 <br>
 
