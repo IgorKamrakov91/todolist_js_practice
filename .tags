@@ -1,0 +1,42 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:JqueryRefactoring
+ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
+ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable
+Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable
+CreateTodos	db/migrate/20161223105231_create_todos.rb	/^class CreateTodos < ActiveRecord::Migration[5.0]$/;"	c
+JqueryRefactoring	config/application.rb	/^module JqueryRefactoring$/;"	m
+Todo	app/assets/javascripts/todos.coffee	/^class Todo$/;"	c
+Todo	app/models/todo.rb	/^class Todo < ApplicationRecord$/;"	c
+TodoTest	test/models/todo_test.rb	/^class TodoTest < ActiveSupport::TestCase$/;"	c
+TodosController	app/controllers/todos_controller.rb	/^class TodosController < ApplicationController$/;"	c
+TodosControllerTest	test/controllers/todos_controller_test.rb	/^class TodosControllerTest < ActionDispatch::IntegrationTest$/;"	c
+TodosHelper	app/helpers/todos_helper.rb	/^module TodosHelper$/;"	m
+change	db/migrate/20161223105231_create_todos.rb	/^  def change$/;"	f	class:CreateTodos
+complete	app/controllers/todos_controller.rb	/^  def complete$/;"	f	class:TodosController
+completed?	app/models/todo.rb	/^  def completed?$/;"	f	class:Todo
+constructor	app/assets/javascripts/todos.coffee	/^  constructor: (item) ->$/;"	m
+create	app/controllers/todos_controller.rb	/^  def create$/;"	f	class:TodosController
+destroy	app/controllers/todos_controller.rb	/^  def destroy$/;"	f	class:TodosController
+edit	app/controllers/todos_controller.rb	/^  def edit$/;"	f	class:TodosController
+index	app/controllers/todos_controller.rb	/^  def index$/;"	f	class:TodosController
+item	app/assets/javascripts/todos.coffee	/^    @item = item$/;"	f
+new	app/controllers/todos_controller.rb	/^  def new$/;"	f	class:TodosController
+set_todo	app/controllers/todos_controller.rb	/^    def set_todo$/;"	f	class:TodosController
+show	app/controllers/todos_controller.rb	/^  def show$/;"	f	class:TodosController
+system!	bin/setup	/^def system!(*args)$/;"	f
+system!	bin/update	/^def system!(*args)$/;"	f
+todo_params	app/controllers/todos_controller.rb	/^    def todo_params$/;"	f	class:TodosController
+todos	app/assets/javascripts/todos.coffee	/^  todos = $.map $("li"), (item, i) ->$/;"	f
+update	app/controllers/todos_controller.rb	/^  def update$/;"	f	class:TodosController
